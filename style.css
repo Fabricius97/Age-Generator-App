@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 94%);
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container {
+    margin: 20px;
+    border-radius: 25px 25px 90px;
+    background-color: white;
+    padding: 38px 25px;
+    display: flex;
+    min-width: 343px;
+    min-height: 486px;
+    width: 660px;
+}
+
+.contentContainer {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 13px;
+    color: hsl(0, 1%, 44%);
+    padding: 5px;
+}
+
+input {
+    min-width: 88px;
+    height: 54px;
+    border: solid 1px hsl(0, 0%, 86%);
+    border-radius: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    outline: none;
+}
+
+input:hover, input:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+
+
+.dayMonthYear * {
+    display: flex;
+    flex-direction: column;
+    gap: -20px;
+}
+
+.dayMonthYear {
+    display: flex;
+    gap: 15px;
+    max-width: 450px;
+}
+
+.errorValid {
+  display: none;
+  color: red;
+  margin-top: 5px;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.requiredField {
+  display: none;
+  color: red;
+  margin-top: 5px;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.invinsibleContainer {
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.invinsibleContainer:after {
+    content: "";
+    position: absolute;
+  }
+  
+  .borderImg {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -31.5px;
+    border: none;
+  }
+
+  button:hover{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+  }
+  
+  .invinsibleContainer img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ageCalculator {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-style: italic;
+    max-width: 545px;
+  }
+
+  @media (min-width: 376px) {
+    .invinsibleContainer {
+      display: flex;
+      justify-content: end;
+    }
+  }
+  
+  @media (min-width: 450px) {
+    .ageCalculator {
+        font-size: 70px;
+    }
+  }
+  
